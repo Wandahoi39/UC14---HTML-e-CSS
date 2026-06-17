@@ -1,0 +1,65 @@
+:root{
+--cor-primaria: #00c3ff;
+--cor-secundaria: #4af9ff;
+--cor-terciaria: #a4faff;
+--cor-fundo: #d5f3ff;
+--cor-texto: #27272a;
+--cor-branca: #ffffff;
+--borda-radius: 10px;
+--sombra: 0 4px 10px rgb(0, 0, 0, 0.2);
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caixa{
+    background-color: var(--cor-branca);
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    border-radius: var(--borda-radius);
+    box-shadow: var(--sombra);
+    text-align: center;
+    width: 300px;
+    opacity: 0.9;
+    align-items: center;
+}
+
+button{
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--borda-radius);
+    transition: 0.3s;
+    animation: moverbotao 4s infinite alternate;
+}
+
+
+
+@keyframes moverbotao{
+    0%{
+        left: 0;
+        background-color: var(--cor-terciaria);
+    }
+
+    50%{
+        background-color: var(--cor-secundaria);
+    }
+
+    100%{
+        left: 300px;
+        background-color: var(--cor-primaria);
+    }
+}
