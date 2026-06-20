@@ -18,7 +18,13 @@
             cursor: pointer;
             font-size: 16px;
             font-family: 'Poppins', sans-serif;
+            transition: .4s;
         }
+
+#botao-voltar:hover{
+
+    transform:scale(1.05);
+}
 
 body{
     background:#FFF8F2;
@@ -165,53 +171,72 @@ section{
     border-radius:20px;
 }
 
-footer{
-    background: #f7e8da;
-    color: #6b5b52;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    border-top: 1px solid #e8d8c8;
-    font-size: 20px;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 40px;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #f5e6d3, #f8d7da);
+    padding: 35px 50px;
+    margin-top: 50px;
+    border-top: 1px solid #e0d0d0;
 }
 
-.footer-left {
-    text-align: left;
+.footer-esquerda {
+    width: 50%;
 }
 
-.footer-right {
-    text-align: right;
+.footer-direita {
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+}
+
+.footer-direita h2 {
+    color:#ff00cc;
+}
+
+.email a {
+    color: #d98fa3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .digitar-email {
+    margin-top: 20px;
     display: flex;
+    justify-content: center;
     gap: 10px;
-    justify-content: flex-end;
 }
 
 .digitar-email input {
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
+    width: 280px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    outline: none;
 }
 
 .digitar-email button {
-    padding: 10px 20px;
+    padding: 14px 28px;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
+    background: #d98fa3;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.digitar-email button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(217,143,163,0.4);
 }
 
 footer h2{
     color:#ff00cc;
-    text-align: center;
 }
 
 .nome{
